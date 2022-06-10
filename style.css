@@ -1,11 +1,15 @@
-*{ padding: 0; margin: 0; box-sizing: border-box; border: 1px solid black;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+*{ padding: 0; margin: 0; box-sizing: 
+}
 
 body{
-    background-color: #ebeff0;
+    background-color: #e1e6e7;
 }
 .container{
 max-width: 1200px;
 margin: 0 auto; /* Centralizando o conteúdo*/
+list-style: none;
 }
 .products-wrapper{
     display: flexbox ;
@@ -21,15 +25,16 @@ margin: 0 auto; /* Centralizando o conteúdo*/
     list-style: none;
 }
 .products-wrapper ul li{
-    width: 24%;
+    width: 20%;
     height: 400px;
     display: flex;
     align-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     background-color: white;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 16px;
+    padding: 19px;
 }
 .menu {
 width: 100%;
@@ -61,17 +66,21 @@ gap: 10px; /* Vamos utilizar essa propriedade do flex para colocar um espaçamen
 text-decoration: none;
 color: #585e65;
 margin-left: 20px;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
 }
 
 .menu-link-button {
 text-decoration: none;
-height: 48px;
+height: 44px;
 background-color: #4c6ef5;
 color: #fff;
 padding: 0 32px;
 display: flex;
 align-items: center;
 border-radius: 4px;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
 }
 
 button{
@@ -92,4 +101,12 @@ figure{
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+ul li p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+figure img{
+    width: 210px;
+    height: 180px;
 }
